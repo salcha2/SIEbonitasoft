@@ -197,7 +197,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_8y17kPHxEe2piLpUfGw7Sg" name="00:00:05" content="5000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_CwD96fHxEe2piLpUfGw7Sg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_CwD96vHxEe2piLpUfGw7Sg" name="validarSolicitudVacaciones" content="cabc3302-c2e6-4a3c-9948-cb19bf027071" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_CwD96vHxEe2piLpUfGw7Sg" name="validarSolicitudCitas" content="cabc3302-c2e6-4a3c-9948-cb19bf027071" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_CwD96_HxEe2piLpUfGw7Sg">
             <inputs xmi:type="process:ContractInput" xmi:id="_CwD97PHxEe2piLpUfGw7Sg" name="solicitudInput" type="COMPLEX" dataReference="solicitud" createMode="false">
@@ -294,7 +294,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_CwD99PHxEe2piLpUfGw7Sg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_CwD99fHxEe2piLpUfGw7Sg" name="ingresarSolicitudVacaciones" content="37839002-d4db-4291-8399-fafa8c54cc98" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_CwD99fHxEe2piLpUfGw7Sg" name="ingresarSolicitudCitas" content="37839002-d4db-4291-8399-fafa8c54cc98" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_CwD99vHxEe2piLpUfGw7Sg">
         <targetForm xmi:type="expression:Expression" xmi:id="_CwD99_HxEe2piLpUfGw7Sg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

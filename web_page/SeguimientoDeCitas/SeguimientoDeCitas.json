@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "SeguimientoDeCitas",
   "name" : "SeguimientoDeCitas",
-  "lastUpdate" : 1684017174777,
+  "lastUpdate" : 1684079961493,
   "rows" : [
     [
       {
@@ -380,7 +380,7 @@
                             },
                             "label" : {
                               "type" : "interpolation",
-                              "value" : "Fecha de inicio"
+                              "value" : "Fecha de cita"
                             },
                             "type" : {
                               "type" : "constant"
@@ -464,7 +464,7 @@
                             },
                             "label" : {
                               "type" : "interpolation",
-                              "value" : "Número de días"
+                              "value" : "¿Para que es la cita?"
                             },
                             "placeholder" : {
                               "type" : "constant",
