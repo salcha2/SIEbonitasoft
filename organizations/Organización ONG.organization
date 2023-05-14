@@ -73,6 +73,14 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="Usuario3">
+      <firstName>Antonio</firstName>
+      <lastName>Lopez</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Director">
@@ -92,6 +100,9 @@
     </role>
     <role name="Beneficiarios">
       <displayName>Beneficiarios</displayName>
+    </role>
+    <role name="Validador">
+      <displayName>Validador</displayName>
     </role>
   </roles>
   <groups>
@@ -168,6 +179,12 @@
       <roleName>PersonalZonasComunes</roleName>
       <groupName>Grupo1</groupName>
       <groupParentPath>/Empleados/Limpieza</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Usuario3</userName>
+      <roleName>Validador</roleName>
+      <groupName>Directivos</groupName>
+      <groupParentPath>/Empleados</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
