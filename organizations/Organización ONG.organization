@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Organización ONG">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="bob">
+      <firstName>Bobby</firstName>
+      <lastName>English</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>bobby@ong.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mar">
+      <firstName>Mary</firstName>
+      <lastName>Curie</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>marycu@ong,com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mario">
+      <firstName>Mariano</firstName>
+      <lastName>Salas</lastName>
+      <manager>bob</manager>
+      <personalData/>
+      <professionalData>
+        <email>mariano@onu.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Usuario1">
+      <firstName>Morad</firstName>
+      <lastName>Clay</lastName>
+      <personalData/>
+      <professionalData>
+        <email>morado@onu.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Usuario2">
+      <firstName>Calvin</firstName>
+      <lastName>Kosovar</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ima">
+      <firstName>Imad</firstName>
+      <lastName>Digital</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>imaddigital@onu.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="chino.younes">
+      <firstName>Youness</firstName>
+      <lastName>Chino</lastName>
+      <manager>mario</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Director">
+      <displayName>Director</displayName>
+    </role>
+    <role name="PersonalCocina">
+      <displayName>PersonalCocina</displayName>
+    </role>
+    <role name="Encargado">
+      <displayName>Encargado</displayName>
+    </role>
+    <role name="PersonalZonasComunes">
+      <displayName>PersonalZonasComunes</displayName>
+    </role>
+    <role name="Benefactores">
+      <displayName>Benefactores</displayName>
+    </role>
+    <role name="Beneficiarios">
+      <displayName>Beneficiarios</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Empleados">
+      <displayName>Empleados</displayName>
+    </group>
+    <group name="Directivos" parentPath="/Empleados">
+      <displayName>Directivos</displayName>
+    </group>
+    <group name="Director" parentPath="/Empleados/Directivos">
+      <displayName>Director</displayName>
+    </group>
+    <group name="Encargado" parentPath="/Empleados/Directivos">
+      <displayName>Encargado</displayName>
+    </group>
+    <group name="Limpieza" parentPath="/Empleados">
+      <displayName>Limpieza</displayName>
+    </group>
+    <group name="Grupo1" parentPath="/Empleados/Limpieza">
+      <displayName>Cocina</displayName>
+    </group>
+    <group name="Grupo2">
+      <displayName>PersonasExterno</displayName>
+    </group>
+    <group name="Benefactores" parentPath="/Grupo2">
+      <displayName>Benefactores</displayName>
+    </group>
+    <group name="Beneficiarios" parentPath="/Grupo2">
+      <displayName>Beneficiarios</displayName>
+    </group>
+    <group name="ZonasComunes" parentPath="/Empleados/Limpieza">
+      <displayName>ZonasComunes</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>bob</userName>
+      <roleName>Director</roleName>
+      <groupName>Directivos</groupName>
+      <groupParentPath>/Empleados</groupParentPath>
+    </membership>
+    <membership>
+      <userName>mar</userName>
+      <roleName>Benefactores</roleName>
+      <groupName>Benefactores</groupName>
+      <groupParentPath>/Grupo2</groupParentPath>
+    </membership>
+    <membership>
+      <userName>mario</userName>
+      <roleName>Encargado</roleName>
+      <groupName>Encargado</groupName>
+      <groupParentPath>/Empleados/Directivos</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Usuario1</userName>
+      <roleName>PersonalCocina</roleName>
+      <groupName>Limpieza</groupName>
+      <groupParentPath>/Empleados</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Usuario2</userName>
+      <roleName>Beneficiarios</roleName>
+      <groupName>Beneficiarios</groupName>
+      <groupParentPath>/Grupo2</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ima</userName>
+      <roleName>Beneficiarios</roleName>
+      <groupName>Beneficiarios</groupName>
+      <groupParentPath>/Grupo2</groupParentPath>
+    </membership>
+    <membership>
+      <userName>chino.younes</userName>
+      <roleName>PersonalZonasComunes</roleName>
+      <groupName>Grupo1</groupName>
+      <groupParentPath>/Empleados/Limpieza</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
