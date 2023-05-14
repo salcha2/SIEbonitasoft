@@ -73,7 +73,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
-    <user userName="Usuario3">
+    <user userName="antonio">
       <firstName>Antonio</firstName>
       <lastName>Lopez</lastName>
       <personalData/>
@@ -181,7 +181,7 @@
       <groupParentPath>/Empleados/Limpieza</groupParentPath>
     </membership>
     <membership>
-      <userName>Usuario3</userName>
+      <userName>antonio</userName>
       <roleName>Validador</roleName>
       <groupName>Directivos</groupName>
       <groupParentPath>/Empleados</groupParentPath>
